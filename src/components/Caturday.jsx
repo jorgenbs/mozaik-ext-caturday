@@ -12,10 +12,6 @@ class Caturday extends Component {
     };
   }
 
-  // _getMarkup() {
-  //   return this.props.content;
-  // }
-
   getInitialState() {
     return {
       v: 0,
@@ -26,7 +22,7 @@ class Caturday extends Component {
   componentDidMount() {
     const inteval = (this.props.intervalSeconds || 5) * 1000;
     const refresh = setInterval(() => {
-      this.forceUpdate();
+      this.setState({v: Math.random()})
     }, inteval);
   }
 
@@ -39,7 +35,7 @@ class Caturday extends Component {
           {title ||' Caturday'}
         </div>
         <div className="widget-markup__body">
-          <img src={`http://thecatapi.com/api/images/get?format=src&type=gif&v=${Math.random()}`} className='widget-markup__img'/>
+          <img src={`http://thecatapi.com/api/images/get?format=src&type=gif&v=${this.state.v}`} className='widget-markup__img'/>
         </div>
       </div>
     );

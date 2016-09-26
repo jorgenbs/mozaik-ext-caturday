@@ -1,5 +1,5 @@
-import Markup from './Markup.jsx';
+import Caturday from './Caturday.jsx';
 
 export default {
-  Markup
+  Caturday
 };

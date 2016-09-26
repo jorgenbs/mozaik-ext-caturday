@@ -1,8 +1,8 @@
 {
-  "name": "mozaik-ext-embed",
+  "name": "mozaik-ext-caturday",
   "version": "0.2.1",
   "license": "MIT",
-  "description": "Mozaik extension for embedding things like HTML in widget",
+  "description": "Mozaik extension for embedding cat gifs",
   "main": "./src/components/index.js",
   "scripts": {
     "test": "ava"
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/juhamust/mozaik-ext-embed"
+    "url": "git://github.com/jorgenbs/mozaik-ext-caturday"
   },
   "author": "Juha Mustonen <juha.p.mustonen@gmail.com>",
   "engines": {
